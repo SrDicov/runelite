@@ -9,6 +9,8 @@ RUN chmod 0755 /tmp/source && \
 
 FROM ghcr.io/containerpak/gtk3:main
 
+RUN apt-get update && apt-get install -y --no-install-recommends libxtst6 && rm -rf /var/lib/apt/lists/*
+
 COPY --from=source /out /opt/runelite
 COPY icon.png /usr/share/icons/hicolor/128x128/apps/runelite.png
 
