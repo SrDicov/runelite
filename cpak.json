@@ -47,7 +47,9 @@
         "access": "read-write"
       }
     ],
-    "env": [],
+    "env": [
+      "LIBGL_DRI3_DISABLE=1"
+    ],
     "network": true,
     "process": false,
     "userNamespaces": true,
