@@ -4,7 +4,7 @@
   "name": "RuneLite",
   "description": "Play Old School RuneScape with RuneLite.",
   "version": "2.8.0",
-  "image": "ghcr.io/containerpak/runelite@sha256:c566c35426491e0cbbdc0d9df51f69dd61e299163661e97aa31ed8ecd82255ba",
+  "image": "ghcr.io/srdicov/runelite@sha256:21583d4eae7e9b8c0f6da2077ea6280e04daec045079a13ec521234eb8337271",
   "binaries": [
     "/usr/bin/runelite"
   ],
@@ -47,7 +47,9 @@
         "access": "read-write"
       }
     ],
-    "env": [],
+    "env": [
+      "LIBGL_DRI3_DISABLE=1"
+    ],
     "network": true,
     "process": false,
     "userNamespaces": true,
