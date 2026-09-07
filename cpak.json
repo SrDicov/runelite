@@ -48,7 +48,7 @@
       }
     ],
     "env": [
-      "LIBGL_DRI3_DISABLE=1"
+      "LIBGL_ALWAYS_SOFTWARE=1"
     ],
     "network": true,
     "process": false,
